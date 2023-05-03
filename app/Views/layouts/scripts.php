@@ -7,6 +7,7 @@
 <script src="/assets/frontend/assets/js/tabs.js"></script>
 <script src="/assets/frontend/assets/js/popup.js"></script>
 <script src="/assets/frontend/assets/js/custom.js"></script>
+<!--
 <script>
   function bannerSwitcher() {
     next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
@@ -18,4 +19,5 @@
     clearInterval(bannerTimer);
     bannerTimer = setInterval(bannerSwitcher, 5000)
   });
+-->
 </script>

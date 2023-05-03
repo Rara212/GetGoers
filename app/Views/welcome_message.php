@@ -36,8 +36,8 @@
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
               <h2>Welcome Get Goers!</h2>
-              <h1>Caribbean</h1>
-              <div class="border-button"><a href="about.html">Go There</a></div>
+              <h1>How to start</h1>
+              <div class="border-button"><a href="about.html">Explore</a></div>
             </div>
             <div class="container">
               <div class="row">
@@ -46,19 +46,19 @@
                     <div class="row">
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-user"></i>
-                        <h4><span>Population:</span><br>44.48 M</h4>
+                        <h4><span>Login:</span><br>Join and host events</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-globe"></i>
-                        <h4><span>Territory:</span><br>275.400 KM<em>2</em></h4>
+                        <h4><span>Book ticket:</span><br>Book your favorite ones</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-home"></i>
-                        <h4><span>AVG Price:</span><br>$946.000</h4>
+                        <h4><span>Payment:</span><br>Book from home</h4>
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.html">Explore More</a>
+                          <a href="about.html">Start Here</a>
                         </div>
                       </div>
                     </div>
@@ -68,6 +68,7 @@
             </div>
           </div>
         </div>
+        <!--
         <div id="top-banner-2" class="banner">
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
@@ -176,7 +177,9 @@
             </div>
           </div>
         </div>
+        -->
       </div>
+      <!--
       <nav>
         <div class="controls">
           <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">1</span></label>
@@ -185,6 +188,7 @@
           <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">4</span></label>
         </div>
       </nav>
+      -->
     </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
@@ -194,7 +198,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="section-heading">
-            <h2>Visit One Of Our Countries Now</h2>
+            <h2>Events You Might Like</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
           </div>
         </div>
@@ -213,16 +217,16 @@
                     </div>
                     <div class="col-lg-8 col-sm-7">
                       <div class="right-content">
-                        <h4>SWITZERLAND</h4>
-                        <span>Europe</span>
+                        <h4>Jan Hye Art Parade</h4>
+                        <span>JCC, Jakarta</span>
                         <div class="main-button">
                           <a href="about.html">Explore More</a>
                         </div>
                         <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
                         <ul class="info">
-                          <li><i class="fa fa-user"></i> 8.66 Mil People</li>
-                          <li><i class="fa fa-globe"></i> 41.290 km2</li>
-                          <li><i class="fa fa-home"></i> $1.100.200</li>
+                          <li><i class="fa fa-user"></i> 20 - 21 May</li>
+                          <li><i class="fa fa-globe"></i> Rp. 200.000</li>
+                          <li><i class="fa fa-home"></i> Art Exhibition</li>
                         </ul>
                         <div class="text-button">
                           <a href="about.html">Need Directions ? <i class="fa fa-arrow-right"></i></a>
@@ -302,6 +306,7 @@
             </div>
           </div>
         </div>
+        <!--
         <div class="col-lg-4">
           <div class="side-bar-map">
             <div class="row">
@@ -313,6 +318,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </div>
   </div>
@@ -321,8 +327,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
-          <h2>Are You Looking To Travel ?</h2>
-          <h4>Make A Reservation By Clicking The Button</h4>
+          <h2>Are You Looking For an Event ?</h2>
+          <h4>Book Now By Clicking The Button</h4>
         </div>
         <div class="col-lg-4">
           <div class="border-button">
