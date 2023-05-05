@@ -3,17 +3,29 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
+use App\Models\EventModel;
 
 class Event extends ResourceController
 {
+    public function __construct() {
+        $this->eventModel = new EventModel();
+    }
+
     /**
      * Return an array of resource objects, themselves in array format
      *
      * @return mixed
      */
+
     public function index()
     {
-        //
+        $events = $this->eventModel->findAll();
+
+        $payload = [
+            "events" => $events
+        ];
+
+        echo view('event/index', $payload);
     }
 
     /**
@@ -33,7 +45,7 @@ class Event extends ResourceController
      */
     public function new()
     {
-        //
+        echo view('event/new');
     }
 
     /**
@@ -43,7 +55,29 @@ class Event extends ResourceController
      */
     public function create()
     {
-        //
+        $fileName = "";
+
+        $photo = $this->request->getFile('photo');
+
+        if ($photo) {
+            $fileName = $photo->getRandomName(); // Mendapatkan nama file baru secara acak
+
+            $photo->move('photos', $fileName); // Memindahkan file ke public/photos dengan nama acak
+        }
+
+        $payload = [
+            'name' => $this->request->getPost('name'),
+            'location' => $this->request->getPost('location'),
+            'about' => $this->request->getPost('about'),
+            'Time' => $this->request->getPost('Time'),
+            'category'    => $this->request->getPost('category'),
+            'price'    => (int) $this->request->getPost('price'),
+            'quota'    => (int) $this->request->getPost('quota'),
+            'photo' => $fileName,
+        ];
+
+        $this->eventModel->insert($payload);
+        return redirect()->to('/event');
     }
 
     /**
