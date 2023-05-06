@@ -1,6 +1,6 @@
 <?= $this->extend('base') ?>
 <?= $this->section('content') ?>
-<div class="row">
+<div class="row mt-5 pt-5">
   <div class="col-lg-8">
     <div class="items">
       <div class="row">
@@ -9,7 +9,7 @@
             <div class="row">
               <div class="col-lg-4 col-sm-5">
                 <div class="image">
-                  <img src="assets/images/country-01.jpg" alt="">
+                  <img src="/assets/frontend/assets/images/country-01.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-8 col-sm-7">

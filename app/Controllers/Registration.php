@@ -13,7 +13,7 @@ class Registration extends ResourceController
      */
     public function index()
     {
-        //
+        echo view('registration/details');
     }
 
     /**

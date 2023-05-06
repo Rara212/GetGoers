@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 $routes->resource('event');
+$routes->resource('registration');
 
 /*
  * --------------------------------------------------------------------
