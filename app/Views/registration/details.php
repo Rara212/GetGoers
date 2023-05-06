@@ -26,7 +26,7 @@
                     <li><i class="fa fa-home"></i> $1.100.200</li>
                   </ul>
                   <div class="text-button">
-                    <a href="about.html">Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                    <a href="about.html">Book Now <i class="fa fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
