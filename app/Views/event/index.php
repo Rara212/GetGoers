@@ -5,22 +5,20 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading text-center">
-            <h2>Best Weekly Offers In Each City</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <h2>Experience from around the world</h2>
           </div>
         </div>
         <div class="col-lg-6 col-sm-6">
           <div class="item">
-            <?php foreach ($events as $item): ?>
-            <div class="row">
+            <div class="row row-cols-2 row-cols-lg-5 g-2">
+              <?php foreach ($events as $item): ?>
               <div class="col-lg-6">
                 <div class="image">
-                  <img src="/photos/<?$item['photo'] ?>" alt="">
+                  <img src="/photos/<?= $item['photo'] ?>" alt="">
                 </div>
               </div>
               <div class="col-lg-6 align-self-center">
                 <div class="content">
-                  <span class="info">*Limited Offer Today</span>
                   <h4><?= $item['name'] ?></h4>
                   <div class="row">
                     <div class="col-6">
@@ -38,8 +36,8 @@
                   </div>
                 </div>
               </div>
+              <?php endforeach ?>
             </div>
-          <?php endforeach ?>
           </div>
         </div>
       </div>

@@ -10,14 +10,14 @@ class EventSeeder extends Seeder
     {
         $data = [
 
-                'name' => 'Glasgow Lake View',
-                'location' => 'United Kingdom',
-                'about' => 'Experience the calm lake in the city of Glasgow',
-                'Time' => 'Everyday 9AM - 4PM',
+                'name' => 'Venice Bridge',
+                'location' => 'Italy',
+                'about' => 'Enjoy the best river city view in Italy',
+                'Time' => 'Everyday 7AM - 12AM',
                 'category'    => 'nature',
                 'price'    => 0,
-                'quota'    => 2000,
-                'photo' => 'deals-01.jpg',
+                'quota'    => 500,
+                'photo' => 'deals-02.jpg',
         ];
         $this->db->table('events')->insert($data); 
     }
