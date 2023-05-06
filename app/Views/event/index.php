@@ -11,10 +11,11 @@
             </div>
           </div>
         </div>
+        <?php foreach ($events as $item): ?>
         <div class="col-lg-6 col-sm-6">
           <div class="item">
             <div class="row row-cols-2 row-cols-lg-5 g-2">
-              <?php foreach ($events as $item): ?>
+              
               <div class="col-lg-6">
                 <div class="image">
                   <img src="/photos/<?= $item['photo'] ?>" alt="">
@@ -39,10 +40,11 @@
                   </div>
                 </div>
               </div>
-              <?php endforeach ?>
+              
             </div>
           </div>
         </div>
+        <?php endforeach ?>
       </div>
     </div>
 </div>
