@@ -8,53 +8,55 @@
             <form action="/event" method="post" enctype="multipart/form-data">
 
                 <div class="form-group">
-                    <label for="example-product-name">Name</label>
-                    <input type="text" class="form-control" id="example-product-name" aria-describedby="emailHelp" 
-                        placeholder="Enter product name" required name="name">
+                    <label for="name">Event Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" 
+                        placeholder="name" required name="name">
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-name">Time</label>
-                    <input type="text" class="form-control" id="example-product-name" aria-describedby="emailHelp" 
-                        placeholder="Enter product name" required name="name">
+                    <label for="time">Time</label>
+                    <input type="text" class="form-control" id="time" aria-describedby="emailHelp" 
+                        placeholder="Enter product name" required name="Time">
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-name">Location</label>
-                    <input type="text" class="form-control" id="example-product-name" aria-describedby="emailHelp" 
-                        placeholder="Enter product name" required name="name">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" aria-describedby="emailHelp" 
+                        placeholder="location" required name="location">
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-name">About</label>
-                    <input type="text" class="form-control" id="example-product-name" aria-describedby="emailHelp" 
-                        placeholder="Enter product name" required name="name">
+                    <label for="about">About</label>
+                    <input type="text" class="form-control" id="about" aria-describedby="emailHelp" 
+                        placeholder="about" required name="about">
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-stock">Stock</label>
-                    <input type="number" min="1" class="form-control" id="example-product-stock" aria-describedby="emailHelp" 
-                        placeholder="Enter product stock" required name="stock">
+                    <label for="quota">quota</label>
+                    <input type="number" min="1" class="form-control" id="quota" aria-describedby="emailHelp" 
+                        placeholder="quota" required name="quota">
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-price">Price</label>
-                    <input type="number" min="1" class="form-control" id="example-product-price" aria-describedby="emailHelp" 
-                        placeholder="Enter product price" required name="price">
+                    <label for="price">Price</label>
+                    <input type="number" min="1" class="form-control" id="price" aria-describedby="emailHelp" 
+                        placeholder="price" required name="price">
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-category">Category</label>
-                    <select class="form-control" name="category" id="example-product-category">
-                        <option value="utilities">Utilities</option>
-                        <option value="food_and_beverages"> Food & Beverages</option>
-                        <option value="books">Books</option>
+                    <label for="category">Category</label>
+                    <select class="form-control" name="category" id="category">
+                        <option value="Art">Art</option>
+                        <option value="Theatre"> Theatre</option>
+                        <option value="Music">Music</option>
+                        <option value="Education">Education</option>
+                        <option value="Nature">Nature</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="example-product-photo">Photo</label>
-                    <input type="file" class="form-control" id="example-product-photo" aria-describedby="photoHelp" name="photo">
+                    <label for="photo">Photo</label>
+                    <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

@@ -9,35 +9,51 @@
 
             <form action="/event/<?= $data['id'] ?>" method="post">
                 <input type="hidden" name="_method" value="put" />
-
                 <div class="form-group">
-                    <label for="example-product-name">Name</label>
-                    <input type="text" class="form-control" id="example-product-name" aria-describedby="emailHelp" 
-                        placeholder="Enter product name" required name="name" value="<?= $data['name'] ?>">
+                    <label for="name">Event Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" 
+                        placeholder="name" required name="name">
                 </div>
-
                 <div class="form-group">
-                    <label for="example-product-stock">Stock</label>
-                    <input type="number" min="1" class="form-control" id="example-product-stock" aria-describedby="emailHelp" 
-                        placeholder="Enter product stock" required name="stock" value="<?= $data['stock'] ?>">
+                    <label for="time">Time</label>
+                    <input type="text" class="form-control" id="time" aria-describedby="emailHelp" 
+                        placeholder="Enter product name" required name="Time">
                 </div>
-
                 <div class="form-group">
-                    <label for="example-product-price">Price</label>
-                    <input type="number" min="1" class="form-control" id="example-product-price" aria-describedby="emailHelp" 
-                        placeholder="Enter product price" required name="price" value="<?= $data['price'] ?>">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" aria-describedby="emailHelp" 
+                        placeholder="location" required name="location">
                 </div>
-
                 <div class="form-group">
-                    <label for="example-product-category">Category</label>
-                    <select class="form-control" name="category" id="example-product-category">
-                        <option value="utilities" <?= $data['category'] == "utilities" ? "selected" : "" ?>>Utilities</option>
-                        <option value="food_and_beverages" <?= $data['category'] == "food_and_beverages" ? "selected" : "" ?>> Food & Beverages</option>
-                        <option value="books" <?= $data['category'] == "books" ? "selected" : "" ?>>Books</option>
+                    <label for="about">About</label>
+                    <input type="text" class="form-control" id="about" aria-describedby="emailHelp" 
+                        placeholder="about" required name="about">
+                </div>
+                <div class="form-group">
+                    <label for="quota">quota</label>
+                    <input type="number" min="1" class="form-control" id="quota" aria-describedby="emailHelp" 
+                        placeholder="quota" required name="quota">
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" min="1" class="form-control" id="price" aria-describedby="emailHelp" 
+                        placeholder="price" required name="price">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select class="form-control" name="category" id="category">
+                        <option value="Art">Art</option>
+                        <option value="Theatre"> Theatre</option>
+                        <option value="Music">Music</option>
+                        <option value="Education">Education</option>
+                        <option value="Nature">Nature</option>
                     </select>
                 </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="photo">Photo</label>
+                    <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo">
+                </div>                                                                                                                                                                                                                                                            
+                                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
