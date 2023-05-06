@@ -6,6 +6,9 @@
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading text-center">
             <h2>Experience from around the world</h2>
+            <div class="main-button">
+              <a class="top-link" href="/event/new">Add New Event</a>
+            </div>
           </div>
         </div>
         <div class="col-lg-6 col-sm-6">
@@ -42,5 +45,5 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
 <?= $this->EndSection() ?>
