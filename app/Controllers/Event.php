@@ -87,7 +87,13 @@ class Event extends ResourceController
      */
     public function edit($id = null)
     {
-        //
+        $event = $this->eventModel->find($id);
+        
+        if (!$event) {
+            throw new \Exception("Data not found!");   
+        }
+        
+        echo view('event/edit', ["data" => $event]);
     }
 
     /**
@@ -97,7 +103,19 @@ class Event extends ResourceController
      */
     public function update($id = null)
     {
-        //
+        $payload = [
+            'name' => $this->request->getPost('name'),
+            'location' => $this->request->getPost('location'),
+            'about' => $this->request->getPost('about'),
+            'Time' => $this->request->getPost('Time'),
+            'category'    => $this->request->getPost('category'),
+            'price'    => (int) $this->request->getPost('price'),
+            'quota'    => (int) $this->request->getPost('quota'),
+            'photo' => $fileName,
+        ];
+
+        $this->eventModel->update($id, $payload);
+        return redirect()->to('/event');
     }
 
     /**
@@ -107,6 +125,7 @@ class Event extends ResourceController
      */
     public function delete($id = null)
     {
-        //
+        $this->eventModel->delete($id);
+        return redirect()->to('/event');
     }
 }

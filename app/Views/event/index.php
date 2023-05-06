@@ -35,8 +35,16 @@
                     </div>
                   </div>
                   <p><?= $item['about'] ?></p>
-                  <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                  <div class="row">
+                    <div class="col-6 main-button">
+                      <a href="reservation.html">Make a Reservation</a>
+                    </div>
+                    <div class="col-5 main-button">
+                      <a href="/event/<?= $item['id'] ?>/edit">Edit</a>
+                    </div>
+                    <div class="col-5 main-button">
+                      <a href="reservation.html">Delete</a>
+                    </div>
                   </div>
                 </div>
               </div>
