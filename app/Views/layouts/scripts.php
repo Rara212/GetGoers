@@ -19,5 +19,5 @@
     clearInterval(bannerTimer);
     bannerTimer = setInterval(bannerSwitcher, 5000)
   });
--->
-</script>
+
+</script>-->
