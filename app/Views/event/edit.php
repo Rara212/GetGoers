@@ -1,7 +1,7 @@
 <?= $this->extend('base') ?>
 
 <?= $this->section('content') ?>
-<!-- ini masih raw dari template  -->
+<!-- ini masih raw dari  -->
 <div class="container mt-5 pt-5">
     <div class="row mb-4">
         <div class="col-12">
