@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="section-heading">
-            <h2>Event Details</h2>
+            <h2>Booking Page</h2>
           </div>
         </div>
       </div>
@@ -16,6 +16,7 @@
               <div class="col-lg-12">
                 <div class="item">
                   <div class="row">
+                    <!--Ubah nya dari sini -->
                     <div class="col-lg-4 col-sm-5">
                       <div class="image">
                         <img src="/assets/frontend/assets/images/country-01.jpg" alt="">
@@ -26,7 +27,7 @@
                         <h4>SWITZERLAND</h4>
                         <span>Europe</span>
                         <div class="main-button">
-                          <a href="/registration/booking">Book Now</a>
+                          <a href="about.html">Book Now</a>
                         </div>
                         <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
                         <ul class="info">
@@ -39,6 +40,7 @@
                         </div>
                       </div>
                     </div>
+                    <!--Sampai sini aja -->
                   </div>
                 </div>
               </div>

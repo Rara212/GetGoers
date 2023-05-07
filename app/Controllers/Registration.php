@@ -13,7 +13,7 @@ class Registration extends ResourceController
      */
     public function index()
     {
-        echo view('registration/details');
+        echo view('registration/index');
     }
 
     /**
@@ -33,7 +33,7 @@ class Registration extends ResourceController
      */
     public function new()
     {
-        echo view('registration/booking');
+        echo view('registration/new');
     }
 
     /**

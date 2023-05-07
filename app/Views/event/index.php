@@ -36,14 +36,23 @@
                   </div>
                   <p><?= $item['about'] ?></p>
                   <div class="row">
-                    <div class="col-6 main-button">
+                    <div class="col-10 main-button">
                       <a href="reservation.html">Make a Reservation</a>
                     </div>
-                    <div class="col-5 main-button">
+                    <!-- <div class="col-5 main-button">
                       <a href="/event/<?= $item['id'] ?>/edit">Edit</a>
                     </div>
                     <div class="col-5 main-button">
                       <a href="reservation.html">Delete</a>
+                    </div> -->
+                    <div class="btn-group " role="group " aria-label="Basic example ">
+                      <form action="/event/<?= $item['id'] ?>" method="POST" onsubmit="return confirm(`Are you sure?`)">
+                        <a href="/event/<?= $item['id'] ?>/edit" class="btn btn-info text-white "><i class='fa fa-light fa-pencil'></i></a>
+                        <input type="hidden" name="_method" value="DELETE" />
+                        <button class="btn btn-danger text-white" type="submit">
+                            <i class='fa fa-light fa-trash'></i>
+                        </button>
+                      </form>
                     </div>
                   </div>
                 </div>
