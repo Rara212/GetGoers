@@ -33,7 +33,7 @@ class Registration extends ResourceController
      */
     public function new()
     {
-        //
+        echo view('registration/booking');
     }
 
     /**
