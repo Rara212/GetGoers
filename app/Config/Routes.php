@@ -34,6 +34,9 @@ $routes->get('/', 'Home::index');
 $routes->resource('event');
 $routes->resource('registration');
 
+$routes->resource('register');
+$routes->resource('login');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
