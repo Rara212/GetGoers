@@ -15,8 +15,8 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="deals.html">Deals</a></li>
                         <li><a href="deals.html">Stats</a></li>
-                        <li><a href="reservation.html">Login</a></li>
-                        <li><a href="reservation.html">Sign Up</a></li>
+                        <li><a href="auth/login">Login</a></li>
+                        <li><a href="auth/register">Sign Up</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
