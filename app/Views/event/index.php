@@ -52,6 +52,7 @@
                         <button class="btn btn-danger text-white" type="submit">
                             <i class='fa fa-light fa-trash'></i>
                         </button>
+                        <p>Tickets Issued: </p>
                       </form>
                     </div>
                   </div>
