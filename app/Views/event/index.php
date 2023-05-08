@@ -37,7 +37,7 @@
                   <p><?= $item['about'] ?></p>
                   <div class="row">
                     <div class="col-10 main-button">
-                      <a href="reservation.html">Make a Reservation</a>
+                      <a href="registration">Make a Reservation</a>
                     </div>
                     <!-- <div class="col-5 main-button">
                       <a href="/event/<?= $item['id'] ?>/edit">Edit</a>
@@ -52,8 +52,11 @@
                         <button class="btn btn-danger text-white" type="submit">
                             <i class='fa fa-light fa-trash'></i>
                         </button>
-                        <p>Tickets Issued: </p>
                       </form>
+                    </div>
+                    <div class="col-6">
+                        <p>tickets issued:</p>
+                        <i class='fa fa-user'></i>
                     </div>
                   </div>
                 </div>
