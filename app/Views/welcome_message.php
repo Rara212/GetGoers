@@ -10,7 +10,7 @@
             <div class="main-caption">
               <h2>Welcome Get Goers!</h2>
               <h1>How to start</h1>
-              <div class="border-button"><a href="about.html">Explore</a></div>
+              <div class="border-button"><a href="/event/index">Explore</a></div>
             </div>
             <div class="container">
               <div class="row">
@@ -31,7 +31,7 @@
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="about.html">Start Here</a>
+                          <a href="/event/index">Start Here</a>
                         </div>
                       </div>
                     </div>
