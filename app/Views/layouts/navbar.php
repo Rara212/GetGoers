@@ -6,7 +6,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="/assets/frontend/assets/images/logo.png" alt="">
+                        <img src="/assets/frontend/assets/images/gglogo2.png" class="img-fluid mt-2 mb-3 " alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
