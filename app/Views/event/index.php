@@ -37,7 +37,7 @@
                   <p><?= $item['about'] ?></p>
                   <div class="row">
                     <div class="col-10 main-button">
-                      <a href="registration">Make a Reservation</a>
+                      <a href="/event/<?= $item['id'] ?>">Make a Reservation</a>
                     </div>
                     <!-- <div class="col-5 main-button">
                       <a href="/event/<?= $item['id'] ?>/edit">Edit</a>

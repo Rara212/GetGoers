@@ -3,9 +3,13 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
+use App\Models\EventModel;
 
 class Registration extends ResourceController
 {
+    public function __construct() {
+        $this->eventModel = new EventModel();
+    }
     /**
      * Return an array of resource objects, themselves in array format
      *
@@ -13,7 +17,13 @@ class Registration extends ResourceController
      */
     public function index()
     {
-        echo view('registration/index');
+        $event = $this->eventModel->find($id);
+
+        if (!$event) {
+            throw new \Exception("Data not found!");   
+        }
+
+        echo view('registration/index', ["data" => $event]);
     }
 
     /**

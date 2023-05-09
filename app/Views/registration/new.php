@@ -68,7 +68,7 @@
                         <div class="form-check mb-3">
                           <input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" required>
                           <label class="form-check-label" for="agreementCheckbox">
-                            I agree with Goers' terms and conditions and privacy policy. Accept agreement and click continue to process your order.
+                            I agree with GetGoers' terms and conditions and privacy policy. Accept agreement and click continue to process your order.
                           </label>
                           <div class="invalid-feedback">You must agree before submitting.</div>
                         </div>

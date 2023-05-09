@@ -35,7 +35,13 @@ class Event extends ResourceController
      */
     public function show($id = null)
     {
-        //
+        $event = $this->eventModel->find($id);
+        
+        if (!$event) {
+            throw new \Exception("Data not found!");   
+        }
+        
+        echo view('event/show', ["data" => $event]);
     }
 
     /**

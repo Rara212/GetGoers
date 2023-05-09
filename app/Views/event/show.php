@@ -18,21 +18,20 @@
                   <div class="row">
                     <div class="col-lg-4 col-sm-5">
                       <div class="image">
-                        <img src="/assets/frontend/assets/images/country-01.jpg" alt="">
+                        <img src="/photos/<?= $data['photo'] ?>" alt="">
                       </div>
                     </div>
                     <div class="col-lg-8 col-sm-7">
                       <div class="right-content">
                         <h4><?= $data['name'] ?></h4>
-                        <span>Europe</span>
                         <div class="main-button">
                           <a href="/registration/new">Book Now</a>
                         </div>
-                        <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
+                        <p><?= $data['about'] ?></p>
                         <ul class="info">
-                          <li><i class="fa fa-user"></i> 8.66 Mil People</li>
-                          <li><i class="fa fa-globe"></i> 41.290 km2</li>
-                          <li><i class="fa fa-home"></i> $1.100.200</li>
+                          <li><i class="fa fa-calendar"></i> <?= $data['Time'] ?></li>
+                          <li><i class="fa fa-globe"></i> <?= $data['location'] ?></li>
+                          <li><i class="fa fa-ticket"></i>$<?= $data['price'] ?></li>
                         </ul>
                         <div class="text-button">
                           <a href="about.html">Contact info <i class="fa fa-arrow-right"></i></a>
