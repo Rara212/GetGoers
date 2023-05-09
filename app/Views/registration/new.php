@@ -24,50 +24,62 @@
                       <form>
                         <div class="mb-3">
                           <label for="inputEmail" class="form-label">Email Address</label>
-                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                          <input type="email" class="form-control" name="emailUser" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                           <div id="emailHelp" class="form-text">Tickets will be sent to this email</div>
                         </div>
                         <div class="row mb-3">
                           <div class="col">
                             <label for="inputFirstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter first name">
+                            <input type="text" class="form-control" name="firstName" id="inputFirstName" placeholder="Enter first name">
                           </div>
                           <div class="col">
                             <label for="inputLastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Enter last name">
+                            <input type="text" class="form-control" name="lastName" id="inputLastName" placeholder="Enter last name">
                           </div>
                         </div>
                         <div class="row mb-3">
                           <div class="col">
                             <label for="inputCountryCode" class="form-label">Country Code</label>
-                            <select id="inputCountryCode" class="form-select" style="width: 10rem;">
+                            <select name="countryCode" id="inputCountryCode" class="form-select" style="width: 10rem;">
                               <option selected>+62</option>
-                              <option>+63</option>
-                              <option>+64</option>
-                              <option>+65</option>
+                              <option value="+93">Afghanistan (+93)</option>
+                              <option value="+355">Albania (+355)</option>
+                              <option value="+54">Argentina (+54)</option>
+                              <option value="+880">Bangladesh (+880)</option>
+                              <option value="+673">Brunei Darussalam (+673)</option>
+                              <option value="+55">Brazil (+55)</option>
+                              <option value="+855">Cambodia (+855)</option>
+                              <option value="+1">Canada (+1)</option>
+                              <option value="+57">Colombia (+57)</option>
+                              <option value="+45">Denmark (+45)</option>
+                              <option value="+20">Egypt (+20)</option>
+                              <option value="+33">France (+33)</option>
+                              <option value="+299">Greenland (+299)</option>
+                              <option value="+852">Hong Kong (+852)</option>
+                              <option value="+62">Indonesia (+62)</option>
                             </select>
                           </div>
                           <div class="col">
                             <label for="inputPhoneNumber" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" style="width: 30rem;" id="inputPhoneNumber" placeholder="Enter phone number">
+                            <input type="text" class="form-control" style="width: 30rem;" name="phoneNumber" id="inputPhoneNumber" placeholder="Enter phone number">
                           </div>
                         </div>
                         <div class="mb-3">
                           <label for="inputGender" class="form-label">Gender</label>
                           <div>
                             <div class="form-check form-check-inline">
-                              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                              <input type="radio" class="btn-check" name="genderMale" id="option1" autocomplete="off" checked>
                               <label class="btn btn-primary" style="width: 15rem;" for="option1">Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                              <input type="radio" class="btn-check" name="genderFemale" id="option2" autocomplete="off">
                               <label class="btn btn-primary" style="width: 15rem;" for="option2">Female</label>
                             </div>
                           </div>
                         </div>
                         <div class="mb-3">
                           <label for="inputTicket" class="form-label">Book for</label>
-                          <input type="number" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
+                          <input type="number" class="form-control" name="bookFor" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
                         </div>
                         <div class="form-check mb-3">
                           <input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" required>
