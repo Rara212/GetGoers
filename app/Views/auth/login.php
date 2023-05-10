@@ -5,6 +5,19 @@
         <div class="col-12">
             <h5 class="mb-4">Login to continue</h5>
 
+            <?php if(session()->getFlashData('success')) { ?>
+                <div class="alert alert-success">
+                    <?= session()->get('success') ?>
+                </div>
+            <?php } ?>
+
+            <?php if(session()->getFlashdata('errors')) { ?>
+                <div class="alert alert-danger">
+                    <?= session()->getFlashdata('errors') ?>
+                </div>
+            <?php } ?>
+
+
             <form action="/login" method="post">
 
                 <div class="form-group">
