@@ -8,7 +8,7 @@
         <div id="top-banner-1" class="banner">
           <div class="banner-inner-wrapper header-text">
             <div class="main-caption">
-              <h2>Welcome Get Goers!</h2>
+              <h2>Welcome <?= session('name')?></h2>
               <h1>How to start</h1>
               <div class="border-button"><a href="/event/index">Explore</a></div>
             </div>

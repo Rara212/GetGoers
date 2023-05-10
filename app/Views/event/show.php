@@ -25,7 +25,7 @@
                       <div class="right-content">
                         <h4><?= $data['name'] ?></h4>
                         <div class="main-button">
-                          <a href="/registration/new">Book Now</a>
+                          <a href="/registration">Book Now</a>
                         </div>
                         <p><?= $data['about'] ?></p>
                         <ul class="info">

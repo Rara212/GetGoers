@@ -36,6 +36,7 @@ $routes->resource('registration');
 
 $routes->resource('register');
 $routes->resource('login');
+$routes->resource('logout');
 
 /*
  * --------------------------------------------------------------------

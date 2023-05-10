@@ -54,7 +54,7 @@ class Login extends ResourceController
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        $user = $this->userModel
+        $user = $this->adminModel
                 ->where('email', $email)
                 ->first();
 
@@ -70,7 +70,7 @@ class Login extends ResourceController
         $this->session->set('name', $user['name']);
         $this->session->set('loggedIn', true);
 
-        return redirect()->to('/welcome_message');
+        return redirect()->to('/');
     }
 
     /**
