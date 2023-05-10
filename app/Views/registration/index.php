@@ -27,6 +27,11 @@
                           <input type="email" class="form-control" name="emailUser" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                           <div id="emailHelp" class="form-text">Tickets will be sent to this email</div>
                         </div>
+                        <div class="mb-3">
+                          <label for="eventName" class="form-label">Event Name</label>
+                          <input type="text" class="form-control" name="event" id="inputEmail" aria-describedby="eventHelp">
+                          <div id="eventName" class="form-text">Tickets will be sent to this email</div>
+                        </div>
                         <div class="row mb-3">
                           <div class="col">
                             <label for="inputFirstName" class="form-label">First Name</label>
@@ -68,11 +73,11 @@
                           <label for="inputGender" class="form-label">Gender</label>
                           <div>
                             <div class="form-check form-check-inline">
-                              <input type="radio" class="btn-check" name="genderMale" id="option1" autocomplete="off" checked>
+                              <input type="radio" class="btn-check" name="gender" id="option1" autocomplete="off" value="male">
                               <label class="btn btn-primary" style="width: 15rem;" for="option1">Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                              <input type="radio" class="btn-check" name="genderFemale" id="option2" autocomplete="off">
+                              <input type="radio" class="btn-check" name="gender" id="option2" autocomplete="off" value="female">
                               <label class="btn btn-primary" style="width: 15rem;" for="option2">Female</label>
                             </div>
                           </div>

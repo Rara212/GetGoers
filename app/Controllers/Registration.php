@@ -4,11 +4,13 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\EventModel;
+use App\Models\TicketingModel;
 
 class Registration extends ResourceController
 {
     public function __construct() {
         $this->eventModel = new EventModel();
+        $this->ticketingModel = new TicketingModel();
     }
 
     /**
@@ -48,7 +50,19 @@ class Registration extends ResourceController
      */
     public function create()
     {
-        //
+        $payload = [
+            "email" => $this->request->getPost('email'),
+            "event" => $this->request->getPost('eventName'),
+            "firstname" => $this->request->getPost('firstName'),
+            "lastname" => $this->request->getPost('lastName'),
+            "country_code" => $this->request->getPost('countryCode'),
+            "telephone" => $this->request->getPost('telephone'),
+            "gender" => $this->request->getPost('gender'),
+            "tickets_issued" => (int) $this->request->getPost('ticketsIssued'),
+        ];
+
+        $this->ticketingModel->insert($payload);
+        return redirect()->to('/event');
     }
 
     /**
