@@ -61,7 +61,7 @@
                           </div>
                           <div class="col">
                             <label for="inputPhoneNumber" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" style="width: 30rem;" name="phoneNumber" id="inputPhoneNumber" placeholder="Enter phone number">
+                            <input type="text" class="form-control" style="width: 30rem;" name="telephone" id="inputPhoneNumber" placeholder="Enter phone number">
                           </div>
                         </div>
                         <div class="mb-3">
@@ -79,7 +79,7 @@
                         </div>
                         <div class="mb-3">
                           <label for="inputTicket" class="form-label">Book for</label>
-                          <input type="number" class="form-control" name="bookFor" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
+                          <input type="number" class="form-control" name="ticketsIssued" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
                         </div>
                         <div class="form-check mb-3">
                           <input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" required>
