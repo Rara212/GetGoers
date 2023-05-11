@@ -57,7 +57,7 @@ class Registration extends ResourceController
     public function create()
     {
         $payload = [
-            "email" => $this->request->getPost('email'),
+            "email_user" => $this->request->getPost('emailUser'),
             "event" => $this->request->getPost('event'),
             "firstname" => $this->request->getPost('firstName'),
             "lastname" => $this->request->getPost('lastName'),
@@ -65,6 +65,7 @@ class Registration extends ResourceController
             "telephone" => $this->request->getPost('telephone'),
             "gender" => $this->request->getPost('gender'),
             "tickets_issued" => (int) $this->request->getPost('ticketsIssued'),
+            "event_id" => (int) $this->request->getPost('eventId'),
         ];
 
         $this->ticketingModel->insert($payload);
