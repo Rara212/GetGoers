@@ -66,9 +66,9 @@
           </div>
         </div>
         <?php endforeach ?>
-        <div class="col-12">
-            <?= $pager->links('events', 'custom_pagination') ?>
-        </div>
+      </div>
+      <div class="col-12">
+        <?= $pager->links('events', 'custom_pagination') ?>
       </div>
     </div>
 </div>

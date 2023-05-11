@@ -19,12 +19,12 @@ class Event extends ResourceController
 
     public function index()
     {
-        $events = $this->eventModel->paginate(1, 'events');
+        $events = $this->eventModel->paginate(4, 'events');
 
 
         $payload = [
             "events" => $events,
-            "pager" => $this->productModel->pager
+            "pager" => $this->eventModel->pager
         ];
 
         echo view('event/index', $payload);
