@@ -1,7 +1,7 @@
 <?= $this->extend('base') ?>
 <?= $this->section('content') ?>
   <!-- ***** Main Banner Area Start ***** -->
-  <div id="section-1">
+  <section id="section-1">
     <div class="content-slider">
       <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
       <div class="slider">

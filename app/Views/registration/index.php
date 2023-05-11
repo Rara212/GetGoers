@@ -29,7 +29,7 @@
                         </div>
                         <div class="mb-3">
                           <label for="eventName" class="form-label">Event Name</label>
-                          <input type="text" class="form-control" name="event" id="inputEmail" aria-describedby="eventHelp">
+                          <input type="text" class="form-control" name="event" id="inputEmail" aria-describedby="eventHelp" value="<?= $data['name'] ?>">
                           <div id="eventName" class="form-text">Tickets will be sent to this email</div>
                         </div>
                         <div class="row mb-3">

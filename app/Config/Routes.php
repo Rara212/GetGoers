@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 $routes->resource('event');
+$routes->get('registration/(:segment)', 'Registration::index/$1');
 $routes->resource('registration');
 
 $routes->resource('register');

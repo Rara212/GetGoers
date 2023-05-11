@@ -18,9 +18,15 @@ class Registration extends ResourceController
      *
      * @return mixed
      */
-    public function index()
+    public function index($id = null)
     {
-        echo view('registration/index');
+        $event = $this->eventModel->find($id);
+
+        if (!$event) {
+            throw new \Exception("Data not found!");   
+        }
+        
+        echo view('registration/index', ["data" => $event]);
     }
 
     /**
