@@ -67,9 +67,13 @@ class Registration extends ResourceController
             "tickets_issued" => (int) $this->request->getPost('ticketsIssued'),
             "event_id" => (int) $this->request->getPost('eventId'),
         ];
+        
+        $tickets_issued = $this->request->getVar('ticketsIssued');
+        $id = $this->request->getVar('eventId');
 
         $this->ticketingModel->insert($payload);
         $this->sendMail();
+        $this->ticketscount($id, $tickets_issued);
 
         return redirect()->to('/event');
     }
@@ -101,6 +105,19 @@ class Registration extends ResourceController
         }
     }
 
+    function ticketscount($id, $tickets_issued)
+	{
+		$data = $this->eventModel->first($id);
+        $current = $data['tickets_sold'];
+        $current = $current + $tickets_issued;
+
+        $payload = [
+            "tickets_sold" => $current
+        ];
+        
+        $this->eventModel->update($id, $payload);
+	}
+
     /**
      * Return the editable properties of a resource object
      *
@@ -118,7 +135,7 @@ class Registration extends ResourceController
      */
     public function update($id = null)
     {
-        //
+        
     }
 
     /**
