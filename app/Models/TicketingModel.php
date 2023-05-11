@@ -14,7 +14,7 @@ class TicketingModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['event', 'email_user', 'firstname', 'lastname', 'gender', 'country_code', 'telephone', 'tickets_issued'];
+    protected $allowedFields    = ['event', 'email_user', 'firstname', 'lastname', 'gender', 'country_code', 'telephone', 'tickets_issued', 'event_id'];
 
     // Dates
     protected $useTimestamps = false;
