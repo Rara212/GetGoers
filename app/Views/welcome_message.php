@@ -52,18 +52,14 @@
                         <div class="services-info">
                             <h1 class="text-black mb-4">About Get Goers</h1>
 
-                            <p class="text-black">Get Goers is an event management website that aims to revolutionize the event planning industry for young people.
-                               With a strong focus on attention to event detail, exceptional customer service, and a commitment to excellence.
-                               We strive to create events that stand out from the competition, ensuring that each event is memorable and truly unforgettable.</p>
+                            <p class="text-black">GET GOERS, A platform that connects people with various experiences; by providing technology solutions for experience creators (such as event organizers and venue owners) and providing exciting experience options for experience seekers through applications and websites. Book your events and activities online with the GET GOERS app.</p>
 
                             <h6 class="text-black mt-4">Event types</h6>
 
-                            <p class="text-black">You are not allowed to redistribute the template ZIP file on any other
-                                website without a permission.</p>
+                            <p class="text-black">there are several events starting from:
+                               art, nature, theatre, music and education</p>
 
-                            <h6 class="text-black mt-4">Whole Night Party</h6>
-
-                            <p class="text-black">Please tell your friends about our website. Thank you.</p>
+                            <h4 class="text-black mt-4">"Together with Get Goers, Ready to enliven your event with an unforgettable experience!"</h4>
                         </div>
                     </div>
 
