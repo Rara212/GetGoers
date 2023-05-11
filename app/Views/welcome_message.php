@@ -44,5 +44,44 @@
       </div>
     </div>
   </section>
+  <section class="about-section section-padding" id="section_2">
+            <div class="container" style="margin-top:-150px !important;">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center" >
+                        <div class="services-info">
+                            <h1 class="text-black mb-4">About Get Goers</h1>
+
+                            <p class="text-black">Get Goers is an event management website that aims to revolutionize the event planning industry for young people.
+                               With a strong focus on attention to event detail, exceptional customer service, and a commitment to excellence.
+                               We strive to create events that stand out from the competition, ensuring that each event is memorable and truly unforgettable.</p>
+
+                            <h6 class="text-black mt-4">Event types</h6>
+
+                            <p class="text-black">You are not allowed to redistribute the template ZIP file on any other
+                                website without a permission.</p>
+
+                            <h6 class="text-black mt-4">Whole Night Party</h6>
+
+                            <p class="text-black">Please tell your friends about our website. Thank you.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="about-text-wrap">
+                            <img src="/assets/frontend/assets/images/gg.png" class="about-image img-fluid">
+
+                            <div class="about-text-info d-flex">
+                                <div class="d-flex">
+                                    <i class="about-text-icon bi-person"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
   <!-- ***** Main Banner Area End ***** -->
 <?= $this->endSection() ?>
