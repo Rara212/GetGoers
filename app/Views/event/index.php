@@ -6,9 +6,11 @@
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading text-center">
             <h2>Experience from around the world</h2>
+            <?php if (session('loggedIn', true)): ?>
             <div class="main-button">
               <a class="top-link" href="/event/new">Add New Event</a>
             </div>
+            <?php endif; ?>
           </div>
         </div>
         <?php foreach ($events as $item): ?>
@@ -45,6 +47,7 @@
                     <div class="col-5 main-button">
                       <a href="reservation.html">Delete</a>
                     </div> -->
+                    <?php if (session('loggedIn', true)): ?>
                     <div class="btn-group " role="group " aria-label="Basic example ">
                       <form action="/event/<?= $item['id'] ?>" method="POST" onsubmit="return confirm(`Are you sure?`)">
                         <a href="/event/<?= $item['id'] ?>/edit" class="btn btn-info text-white "><i class='fa fa-light fa-pencil'></i></a>
@@ -57,10 +60,10 @@
                     <div class="col-6">
                         <p>tickets issued: <i class='fa fa-user'></i></p>
                     </div>
+                    <?php endif; ?>
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>

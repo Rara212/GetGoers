@@ -43,6 +43,7 @@ class Event extends ResourceController
             throw new \Exception("Data not found!");   
         }
         
+        
         echo view('event/show', ["data" => $event]);
     }
 
