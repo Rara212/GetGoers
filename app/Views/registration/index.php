@@ -21,28 +21,29 @@
                     <div class="card-body">
                       <h5 class="card-title">Buyer Information</h5>
                       <h6 class="card-subtitle mb-2 text-body-secondary">Make sure all the information is correct. You cannot change it.</h6>
-                      <form>
-                        <div class="mb-3">
+                      
+                      <form action="/registration" method="post" enctype="multipart/form-data">
+                        <div class="form-group mb-3">
                           <label for="inputEmail" class="form-label">Email Address</label>
                           <input type="email" class="form-control" name="emailUser" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                           <div id="emailHelp" class="form-text">Tickets will be sent to this email</div>
                         </div>
-                        <div class="mb-3">
+                        <div class="form-group mb-3">
                           <label for="eventName" class="form-label">Event Name</label>
                           <input type="text" class="form-control" name="event" id="inputEmail" aria-describedby="eventHelp" value="<?= $data['name'] ?>">
                           <div id="eventName" class="form-text">Tickets will be sent to this email</div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="form-group row mb-3">
                           <div class="col">
                             <label for="inputFirstName" class="form-label">First Name</label>
                             <input type="text" class="form-control" name="firstName" id="inputFirstName" placeholder="Enter first name">
                           </div>
-                          <div class="col">
+                          <div class="form-group col">
                             <label for="inputLastName" class="form-label">Last Name</label>
                             <input type="text" class="form-control" name="lastName" id="inputLastName" placeholder="Enter last name">
                           </div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="form-group row mb-3">
                           <div class="col">
                             <label for="inputCountryCode" class="form-label">Country Code</label>
                             <select name="countryCode" id="inputCountryCode" class="form-select" style="width: 10rem;">
@@ -64,12 +65,12 @@
                               <option value="+62">Indonesia (+62)</option>
                             </select>
                           </div>
-                          <div class="col">
+                          <div class="form-group col">
                             <label for="inputPhoneNumber" class="form-label">Phone Number</label>
                             <input type="text" class="form-control" style="width: 30rem;" name="telephone" id="inputPhoneNumber" placeholder="Enter phone number">
                           </div>
                         </div>
-                        <div class="mb-3">
+                        <div class="form-group mb-3">
                           <label for="inputGender" class="form-label">Gender</label>
                           <div>
                             <div class="form-check form-check-inline">
@@ -82,11 +83,11 @@
                             </div>
                           </div>
                         </div>
-                        <div class="mb-3">
+                        <div class="form-group mb-3">
                           <label for="inputTicket" class="form-label">Book for</label>
                           <input type="number" class="form-control" name="ticketsIssued" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
                         </div>
-                        <div class="form-check mb-3">
+                        <div class="form-group form-check mb-3">
                           <input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" required>
                           <label class="form-check-label" for="agreementCheckbox">
                             I agree with GetGoers' terms and conditions and privacy policy. Accept agreement and click continue to process your order.

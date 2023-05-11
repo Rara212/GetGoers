@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class TicketingModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'ticketings';
+    protected $table            = 'eventregists';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;

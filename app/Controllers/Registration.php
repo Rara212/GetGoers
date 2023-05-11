@@ -58,7 +58,7 @@ class Registration extends ResourceController
     {
         $payload = [
             "email" => $this->request->getPost('email'),
-            "event" => $this->request->getPost('eventName'),
+            "event" => $this->request->getPost('event'),
             "firstname" => $this->request->getPost('firstName'),
             "lastname" => $this->request->getPost('lastName'),
             "country_code" => $this->request->getPost('countryCode'),
@@ -68,7 +68,36 @@ class Registration extends ResourceController
         ];
 
         $this->ticketingModel->insert($payload);
+        $this->sendMail();
+
         return redirect()->to('/event');
+    }
+
+    function sendMail() { 
+        $to = $this->request->getVar('emailUser');
+        $event = $this->request->getVar('event');
+        $firstname = $this->request->getVar('firstName');
+        $lastname = $this->request->getVar('lastName');
+        $country_code = $this->request->getVar('countryCode');
+        $telephone = $this->request->getVar('telephone');
+        $tickets_issued = $this->request->getVar('ticketsIssued');
+
+        $email = \Config\Services::email();
+        $email->setTo($to);
+        $email->setFrom('getgoersadmin@gmail.com', 'Get Goers Admin');
+        
+        $email->setSubject('Registration Ticket');
+        $email->setMessage($event);
+
+        if ($email->send()) 
+		{
+            echo 'Email successfully sent';
+        } 
+		else 
+		{
+            $data = $to->printDebugger(['headers']);
+            print_r($data);
+        }
     }
 
     /**

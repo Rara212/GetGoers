@@ -15,7 +15,7 @@
                         <li><a href="/" class="active">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="event">Deals</a></li>
-                        <li><a href="logout">Logout</a></li>
+                        <li><a href="/logout">Logout</a></li>
                         <?php else: ?>
                         <li><a href="/" class="active">Home</a></li>
                         <li><a href="about.html">About</a></li>
