@@ -55,8 +55,7 @@
                       </form>
                     </div>
                     <div class="col-6">
-                        <p>tickets issued:</p>
-                        <i class='fa fa-user'></i>
+                        <p>tickets issued: <i class='fa fa-user'></i></p>
                     </div>
                   </div>
                 </div>

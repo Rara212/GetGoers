@@ -11,12 +11,13 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="/" class="active">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="event">Deals</a></li>
                         <li><a href="deals.html">Stats</a></li>
                         <li><a href="login">Login</a></li>
                         <li><a href="register">Sign Up</a></li>
+                        <li><a href="logout">Logout</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
