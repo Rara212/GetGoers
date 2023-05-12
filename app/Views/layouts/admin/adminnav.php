@@ -12,8 +12,8 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <?php if (session('loggedIn', true)): ?>
-                        <li><a href="/" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="admin" class="active">Home</a></li>
+                        <li><a href="#section_2">About</a></li>
                         <li><a href="event">Deals</a></li>
                         <li><a href="/logout">Logout</a></li>
                         <?php else: ?>

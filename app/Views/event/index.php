@@ -58,7 +58,7 @@
                       </form>
                     </div>
                     <div class="col-6">
-                        <p>tickets issued:   <?= $item['tickets_sold'] ?><i class='fa fa-user'></i></p>
+                        <p>tickets issued:   <?= $item['tickets_sold'] ?></p>
                     </div>
                     <?php endif; ?>
                   </div>

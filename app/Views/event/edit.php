@@ -1,4 +1,4 @@
-<?= $this->extend('base') ?>
+<?= $this->extend('baseadmin') ?>
 
 <?= $this->section('content') ?>
 <!-- ini masih raw dari  -->

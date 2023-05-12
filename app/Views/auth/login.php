@@ -1,4 +1,4 @@
-<?= $this->extend('base') ?>
+<?= $this->extend('baseadmin') ?>
 <?= $this->section('content') ?>
 <div class="container mt-5 pt-4">
     <div class="row mb-4">
