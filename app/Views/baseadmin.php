@@ -38,7 +38,7 @@
         </div>
         <div class="col-lg-4">
           <div class="border-button">
-            <a href="reservation.html">Book Yours Now</a>
+            <a href="event">Book Yours Now</a>
           </div>
         </div>
       </div>
