@@ -1,4 +1,4 @@
-<?= $this->extend('base') ?>
+<?= $this->extend('baseadmin') ?>
 <?= $this->section('content') ?>
   <!-- ***** Main Banner Area Start ***** -->
   <section id="section-1">
