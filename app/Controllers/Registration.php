@@ -92,11 +92,11 @@ class Registration extends ResourceController
         $email->setFrom('getgoersadmin@gmail.com', 'Get Goers Admin');
         
         $email->setSubject('Registration Ticket');
-        $email->setMessage($event);
+        $email->setMessage('Hello, thank you for booking with us. Here\'s your tickets details<br>Event Name : '.$event. '<br>Name : '.$firstname." ".$lastname.'<br>tickets: '.$tickets_issued);
 
         if ($email->send()) 
 		{
-            echo'<script>alert("Thank you! Your ticket has been sent through your email")</script>';
+            echo("email successfully sent");
         } 
 		else 
 		{

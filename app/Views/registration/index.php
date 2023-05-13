@@ -96,7 +96,24 @@
                           <div class="invalid-feedback">You must agree before submitting.</div>
                         </div>
                         <div class="col-12">
-                          <button type="submit" class="btn btn-primary" style="width: 100%;">Continue</button>
+                          <button type="submit" class="btn btn-primary" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal">Continue</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Your ticket has been sent through your email</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
