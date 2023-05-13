@@ -49,21 +49,21 @@
                             <label for="inputCountryCode" class="form-label">Country Code</label>
                             <select name="countryCode" id="inputCountryCode" class="form-select" style="width: 10rem;">
                               <option selected>+62</option>
-                              <option value="+93">Afghanistan (+93)</option>
-                              <option value="+355">Albania (+355)</option>
-                              <option value="+54">Argentina (+54)</option>
-                              <option value="+880">Bangladesh (+880)</option>
-                              <option value="+673">Brunei Darussalam (+673)</option>
-                              <option value="+55">Brazil (+55)</option>
-                              <option value="+855">Cambodia (+855)</option>
-                              <option value="+1">Canada (+1)</option>
-                              <option value="+57">Colombia (+57)</option>
-                              <option value="+45">Denmark (+45)</option>
-                              <option value="+20">Egypt (+20)</option>
-                              <option value="+33">France (+33)</option>
-                              <option value="+299">Greenland (+299)</option>
-                              <option value="+852">Hong Kong (+852)</option>
-                              <option value="+62">Indonesia (+62)</option>
+                              <option value="+93">+93</option>
+                              <option value="+355">+355</option>
+                              <option value="+54">+54</option>
+                              <option value="+880">+880</option>
+                              <option value="+673">+673</option>
+                              <option value="+55">+55</option>
+                              <option value="+855">+855</option>
+                              <option value="+1">+1</option>
+                              <option value="+57">+57</option>
+                              <option value="+45">+45</option>
+                              <option value="+20">+20</option>
+                              <option value="+33">+33</option>
+                              <option value="+299">+299</option>
+                              <option value="+852">+852</option>
+                              <option value="+62">+62</option>
                             </select>
                           </div>
                           <div class="form-group col">
