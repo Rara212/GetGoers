@@ -21,7 +21,7 @@
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-    <?= $this->include('layouts/admin/adminnav') ?>
+    <?= $this->include('admin/layouts/adminnav') ?>
   <!-- ***** Header Area End ***** -->
 
   <!-- Main Content --->
@@ -38,7 +38,7 @@
         </div>
         <div class="col-lg-4">
           <div class="border-button">
-            <a href="event">Book Yours Now</a>
+            <a href="admin">Book Yours Now</a>
           </div>
         </div>
       </div>

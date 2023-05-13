@@ -96,7 +96,7 @@ class Registration extends ResourceController
 
         if ($email->send()) 
 		{
-            echo 'Email successfully sent';
+            echo'<script>alert("Thank you! Your ticket has been sent through your email")</script>';
         } 
 		else 
 		{

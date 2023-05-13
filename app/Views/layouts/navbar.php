@@ -11,7 +11,7 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#section_2">About</a></li>
                         <li><a href="event">Deals</a></li>
                     </ul>   
