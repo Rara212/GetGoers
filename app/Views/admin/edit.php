@@ -6,7 +6,7 @@
     <div class="row mb-4">
         <div class="col-12">
             <h5 class="mb-4">Update Event <?= $data['name'] ?></h5>
-            <form action="/event/<?= $data['id'] ?>" method="post">
+            <form action="/admin/<?= $data['id'] ?>" method="post">
                 <input type="hidden" name="_method" value="put" />
                 
                 <div class="form-group">

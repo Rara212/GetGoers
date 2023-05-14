@@ -70,7 +70,7 @@ class Login extends ResourceController
         $this->session->set('name', $user['name']);
         $this->session->set('loggedIn', true);
 
-        return redirect()->to('/');
+        return redirect()->to('adminpage');
     }
 
     /**

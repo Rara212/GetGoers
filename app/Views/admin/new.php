@@ -5,7 +5,7 @@
         <div class="col-12">
             <h5 class="mb-4">Host New Event</h5>
 
-            <form action="/event" method="post" enctype="multipart/form-data">
+            <form action="/admin" method="post" enctype="multipart/form-data">
 
                 <div class="form-group">
                     <label for="name">Event Name</label>
