@@ -34,7 +34,7 @@
                           <li><i class="fa fa-ticket"></i>$<?= $data['price'] ?></li>
                         </ul>
                         <div class="text-button">
-                          <a href="about.html">Contact info <i class="fa fa-arrow-right"></i></a>
+                          <a href="https://www.instagram.com/alrzky.r">Contact info <i class="fa fa-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>

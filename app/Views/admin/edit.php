@@ -55,11 +55,6 @@
                         <option value="Nature" <?= $data['category'] == "Nature" ? "selected" : "" ?>>Nature</option>
                     </select>
                 </div>
-
-                <div class="form-group">
-                    <label for="photo">Photo</label>
-                    <input type="file" class="form-control" id="photo" aria-describedby="photoHelp" name="photo" value="<?= $data['photo'] ?>">
-                </div>                                                                                                                                                                                                                                                            
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

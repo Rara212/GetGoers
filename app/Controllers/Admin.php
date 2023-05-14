@@ -119,7 +119,6 @@ class Admin extends ResourceController
             'category'    => $this->request->getPost('category'),
             'price'    => (int) $this->request->getPost('price'),
             'quota'    => (int) $this->request->getPost('quota'),
-            'photo' => $fileName,
         ];
 
         $this->eventModel->update($id, $payload);

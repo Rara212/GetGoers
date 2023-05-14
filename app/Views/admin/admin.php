@@ -30,7 +30,7 @@
                       </div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <div class="main-button">
-                          <a href="event">Start Here</a>
+                          <a href="admin">Start Here</a>
                         </div>
                       </div>
                     </div>
