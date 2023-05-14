@@ -6,7 +6,7 @@
                   <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center" >
                       <div class="services-info">
                           <h1 class="text-black mb-4">About Get Goers</h1>
-                          <p class="text-black">GET GOERS, A platform that connects people with various experiences; by providing technology solutions f
+                          <p class="text-black">GET GOERS, A platform that connects people with various experiences; by providing technology solutions 
                           <h6 class="text-black mt-4">Event types</h6>
                           <p class="text-black">there are several events starting from:
                              art, nature, theatre, music and education</p>
