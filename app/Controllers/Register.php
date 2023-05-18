@@ -47,14 +47,34 @@ class Register extends ResourceController
      */
     public function create()
     {
-        $payload = [
-            "name" => $this->request->getPost('name'),
-            "email" => $this->request->getPost('email'),
-            "password" => md5($this->request->getPost('password')),
-        ];
+        try{
+            $validate = $this->validate([
+                'name' => 'required',
+                'email' => 'required',
+                'password' => 'required',
+                'password_confirmation' => 'required|matches[password]',
+            ],[
+                "password_confirmation" => [
+                    "matches" => "password confirmation doesn't match!",
+                ],
+            ]);
 
-        $this->adminModel->insert($payload);
-        return redirect()->to('/login');
+            if(!$validate){
+                session()->setFlashData("errors", $this->validator->listErrors());
+                return redirect()->to(previous_url())->withInput();
+            }
+
+            $payload = [
+                "name" => $this->request->getPost('name'),
+                "email" => $this->request->getPost('email'),
+                "password" => md5($this->request->getPost('password')),
+            ];
+
+            $this->adminModel->insert($payload);
+            return redirect()->to('/login');
+        } catch(\Exception $e) {
+            return redirect()->to(previous_url());
+        }
     }
 
     /**
