@@ -65,7 +65,7 @@ class Login extends ResourceController
             $email = $this->request->getPost('email');
             $password = $this->request->getPost('password');
     
-            $user = $this->userModel
+            $user = $this->adminModel
                     ->where('email', $email)
                     ->first();
     
