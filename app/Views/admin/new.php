@@ -14,10 +14,16 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="time">Time</label>
-                    <input type="datetime-local" class="form-control" id="time" aria-describedby="emailHelp" 
+                    <label for="time">Date</label>
+                    <input type="date" class="form-control" id="time" aria-describedby="emailHelp" 
                         placeholder="Enter product name" required name="Time">
                 </div>
+
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" class="form-control" id="start_time" aria-describedby="emailHelp"
+                        placeholder="Enter product name" required name="start_time">
+                    </div>
 
                 <div class="form-group">
                     <label for="location">Location</label>

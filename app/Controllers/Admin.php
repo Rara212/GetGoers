@@ -81,6 +81,7 @@ class Admin extends ResourceController
             'category'    => $this->request->getPost('category'),
             'price'    => (int) $this->request->getPost('price'),
             'quota'    => (int) $this->request->getPost('quota'),
+            'start_time' => $this->request->getPost('start_time'),
             'photo' => $fileName,
         ];
 
