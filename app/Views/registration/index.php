@@ -96,7 +96,11 @@
                           <div class="invalid-feedback">You must agree before submitting.</div>
                         </div>
                         <div class="col-12">
+                          <?php if (ticketsIssued==0): ?>
+                          <button type="submit" class="btn btn-primary" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>Continue</button>
+                          <?php else: ?>
                           <button type="submit" class="btn btn-primary" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal">Continue</button>
+                          <?php endif; ?>
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
