@@ -86,7 +86,7 @@
                         </div>
                         <div class="form-group mb-3">
                           <label for="inputTicket" class="form-label">Book for</label>
-                          <input type="number" class="form-control" name="ticketsIssued" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
+                          <input type="number" min="1" class="form-control" name="ticketsIssued" id="inputEmail" aria-describedby="emailHelp" placeholder="1">
                         </div>
                         <div class="form-group form-check mb-3">
                           <input class="form-check-input" type="checkbox" value="" id="agreementCheckbox" required>

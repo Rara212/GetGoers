@@ -28,9 +28,14 @@
                   <h4><?= $item['name'] ?></h4>
                   <div class="row">
                     <div class="col-6">
-                      <i class="fa fa-clock"></i>
+                      <i class="fa fa-calendar"></i>
                       <span class="list"><?= $item['Time'] ?></span>
                     </div>
+                    <div class="col-6">
+                      <i class="fa fa-clock"></i>
+                      <span class="list"><?= $item['start_time'] ?></span>
+                    </div>
+                    
                     <div class="col-6">
                       <i class="fa fa-map"></i>
                       <span class="list"><?= $item['location'] ?></span>
