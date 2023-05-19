@@ -15,7 +15,7 @@
 
                 <div class="form-group">
                     <label for="time">Time</label>
-                    <input type="text" class="form-control" id="time" aria-describedby="emailHelp" 
+                    <input type="datetime-local" class="form-control" id="time" aria-describedby="emailHelp" 
                         placeholder="Enter product name" required name="Time">
                 </div>
 
